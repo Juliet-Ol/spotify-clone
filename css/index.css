@@ -29,3 +29,55 @@
     margin: 1rem;
     align-self: center;
  }
+
+ @media (max-width: 900px) {
+    .home-main-section .img-wrapper{
+        display: none;
+    }
+    .home-main-section{
+        justify-content: center;
+    }
+ }
+
+ .home-page-circle-1{
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgb(189, 53, 153, .1 );
+    bottom: 5vw;
+    left: 5vw;
+    z-index: -1;
+ }
+
+ .home-page-circle-2{
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgb(23, 98, 167, .1);
+    top: 15vh;
+    left: 30vw;
+    z-index: -1;
+ }
+
+ .home-page-circle-3{
+    position: absolute;
+    overflow: hidden;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+ }
+
+ .home-page-circle-3::before {
+    content:'';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgb(23, 98, 167, .1);
+ }
